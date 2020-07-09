@@ -11,17 +11,14 @@
       "after": ["<leader>", "<leader>", "w"]
     }
   ],
-
+  "vim.easymotion": true,
+  "vim.leader": "<space>",
   "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "terminal.integrated.rendererType": "dom",
-  "git.enableSmartCommit": true,
   "editor.minimap.enabled": false,
-  "workbench.colorTheme": "Monokai",
   "editor.snippetSuggestions": "top",
   "editor.tabCompletion": "on",
   "editor.formatOnSave": true,
-  "git.ignoreLegacyWarning": true,
-  "vim.easymotion": true,
-  "vim.leader": "<space>"
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "git.enableSmartCommit": true,
+  "git.ignoreLegacyWarning": true
 }
