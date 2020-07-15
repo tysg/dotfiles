@@ -26,4 +26,5 @@ ia sf scanf
 ia pf printf
 
 let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki',
-                      \ 'syntax': 'markdown', 'ext': '.wiki'}]
+                      \ 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_global_ext = 0
