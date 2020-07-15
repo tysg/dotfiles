@@ -17,7 +17,6 @@ call plug#end()
 
 nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>gr <Plug>(coc-references)
-nmap <leader>w <leader><leader>w
 nmap <C-n> :NERDTreeToggle<CR>
 nnoremap <C-p> :Files<CR>
 
