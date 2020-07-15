@@ -5,4 +5,6 @@ cp ~/.vimrc ./
 # updates source
 cp ./init.vim ~/.config/nvim/
 cp .vimrc ~/
+cp .tmux.conf ~/
+
 
