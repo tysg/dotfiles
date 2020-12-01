@@ -61,6 +61,7 @@ ZSH_THEME="robbyrussell"
 plugins=(
   git
   zsh-autosuggestions
+  zsh-syntax-highlighting
 )
 
 
@@ -94,5 +95,26 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+# Load rbenv on launch
+alias vim='nvim'
+
+# The next line updates PATH for the Google Cloud SDK.
+# if [ -f '/Users/ty/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ty/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+# if [ -f '/Users/ty/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ty/google-cloud-sdk/completion.zsh.inc'; fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+[ -f "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env" ] && source "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env"
+
+eval "$(rbenv init -)"
+eval "$(pyenv init -)"
+
+# opam configuration
+test -r /Users/ty/.opam/opam-init/init.zsh && . /Users/ty/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
