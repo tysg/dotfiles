@@ -21,12 +21,13 @@ ia psvm public static void main(String[] args) {<CR>}<UP><END>
 ia sop System.out.println
 ia imv #include <stdio.h><CR><CR>int main(void) {<CR>return 0;<CR>}<UP><UP><END>
 ia sf scanf
-ia pf print!("{}", );<esc>2hi
+ia pf println!("{}",);<esc>hi
 
 
 
 
 call plug#begin(stdpath('data') . '/plugged')
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() }}
 Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdtree'
