@@ -22,6 +22,7 @@ ia sop System.out.println
 ia imv #include <stdio.h><CR><CR>int main(void) {<CR>return 0;<CR>}<UP><UP><END>
 ia sf scanf
 ia pf println!("{}",);<esc>hi
+ia drdb #[derive(Debug)] 
 
 
 
