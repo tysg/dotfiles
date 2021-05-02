@@ -1,6 +1,0 @@
-inoremap jk <Esc> 
-set easymotion
-set surround
-
-
-nmap gh <Action>(QuickJavaDoc)

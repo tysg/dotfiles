@@ -1,0 +1,4 @@
+fish
+git
+nvim
+tmux

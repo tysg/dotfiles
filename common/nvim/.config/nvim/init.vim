@@ -1,3 +1,4 @@
+set clipboard=unnamed
 set nocompatible
 set expandtab
 set rnu
@@ -17,13 +18,15 @@ set mps+=<:>
 ia teh the
 ia hte the
 ia oyu you
+
 ia psvm public static void main(String[] args) {<CR>}<UP><END>
 ia sop System.out.println
-ia imv #include <stdio.h><CR><CR>int main(void) {<CR>return 0;<CR>}<UP><UP><END>
-ia sf scanf
+
 ia pf println!("{}",);<esc>hi
 ia drdb #[derive(Debug)] 
-
+ia clv collect::<Vec<_>>()
+ia ps parse::<>().unwrap();<esc>12hi
+ia rsts #[cfg(test)]<CR>mod tests {<CR>use super::*;<CR><CR>#[test]<CR>fn test_add() {<CR>assert_eq!(1+2, 3);<CR>}<CR>}
 
 
 
@@ -36,13 +39,14 @@ Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-surround'
 Plug 'vimwiki/vimwiki'
 Plug 'rust-lang/rust.vim'
+Plug 'ledger/vim-ledger'
 call plug#end()
 
 nmap <leader>gd <Plug>(coc-definition)
-nmap <leader>gr <Plug>(coc-references)
+nmap <leader>gh <Plug>(coc-references)
 nmap <leader>w <leader><leader>w
 nmap <C-n> :NERDTreeToggle<CR>
-nnoremap <C-p> :Files<CR>
+nnoremap <C-p> :GFiles<CR>
 
 
 let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki',

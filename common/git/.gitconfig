@@ -1,0 +1,16 @@
+[alias]
+	adog = log --all --decorate --oneline --graph
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	pl = pull
+	ps = push
+	pushup = !git push --set-upstream origin $(git symbolic-ref --short HEAD)
+	pm = pull --rebase=interactive origin master
+	pmm = pull --rebase=interactive origin main
+	pf = push --force
+[user]
+	name = Tianyi Song
+	email = 42670338+tysg@users.noreply.github.com
+	signingkey = 94C3A429

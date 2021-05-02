@@ -1,0 +1,8 @@
+inoremap jk <Esc> 
+nnoremap <SPACE> <Nop>
+let mapleader=" "
+set easymotion
+set surround
+
+nmap gh <Action>(QuickJavaDoc)
+map <Leader> <Plug>(easymotion-prefix)
